@@ -54,3 +54,8 @@ h2 {
     flex-direction: column;
     gap: 2vh;
 }
+
+.form-group{
+    display: flex;
+    gap: 3vh;
+}
