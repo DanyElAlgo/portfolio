@@ -149,8 +149,16 @@ h6{
 .contact-form{
     align-items: center;
 }
+.contact-form input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
 .contact-form textarea{
     min-width: 75%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 footer{
@@ -166,4 +174,13 @@ footer{
 .form-group{
     display: flex;
     flex-wrap: wrap;
+}
+
+.skills-list li {
+    width:40%;
+}
+
+.skills-list li div{
+    display: flex;
+    justify-content: space-between;
 }
