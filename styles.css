@@ -6,7 +6,10 @@ header{
 }
 
 h2 {
-    font-family: math;
+    font-size:xx-large;
+}
+h3{
+    font-size: x-large;
 }
 
 .main-centerer {
@@ -43,6 +46,7 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    font-size: xx-large;
   }
 
 .contact-form{
@@ -91,6 +95,9 @@ main{
 h6{
     margin-top:0.5rem;
     margin-bottom:1rem;
+    font-size:medium;
+    font-weight: 700;
+    color: #6c757d;
 }
 
 .project h3{
@@ -108,4 +115,20 @@ h6{
 
 .navbar a{
     font-size: larger;
+}
+
+.contact-form button{
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: min-content;
+}
+.contact-form{
+    align-items: center;
+}
+.contact-form textarea{
+    min-width: 75%;
 }
