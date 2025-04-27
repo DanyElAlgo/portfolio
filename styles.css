@@ -7,6 +7,7 @@
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 h2 {
@@ -29,6 +30,12 @@ h3{
     gap: 5vh;
     width: 50vw;
     margin-top: auto;
+}
+
+.about-wrapper{
+    background-color: white;
+    padding: 2vh;
+    border-radius: 15px;
 }
 
 .hero-image {
@@ -114,6 +121,7 @@ h6{
 .navbar{
     display: flex;
     gap: 2vw;
+    flex-wrap: wrap;
 }
 
 .navbar a{
@@ -154,4 +162,8 @@ footer{
     justify-content: space-between;
     align-items: center;
     color: #6c757d;
+}
+.form-group{
+    display: flex;
+    flex-wrap: wrap;
 }
