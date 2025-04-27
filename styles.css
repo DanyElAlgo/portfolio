@@ -1,4 +1,8 @@
-header{
+.header{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left:4vw;
+    margin-right:4vw;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -108,12 +112,20 @@ h6{
 }
 
 .navbar{
-    margin-right: 3vw;
     display: flex;
     gap: 2vw;
 }
 
 .navbar a{
+    font-size: larger;
+}
+
+.footer-links{
+    display: flex;
+    gap: 2vw;
+}
+
+.footer-links a{
     font-size: larger;
 }
 
@@ -131,4 +143,15 @@ h6{
 }
 .contact-form textarea{
     min-width: 75%;
+}
+
+footer{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left:4vw;
+    margin-right:4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #6c757d;
 }
