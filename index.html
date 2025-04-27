@@ -10,26 +10,24 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <header>
+  <body style="margin: 0">
+    <header style="margin: 8px">
       <h1>Welcome to My Portfolio</h1>
-      <nav>
+      <nav class="navbar">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
-
     <main>
+      <section class="hero-image" id="hero">
+        <div class="hero-text">
+          <h1>I am Daniel</h1>
+          <p>And I'm going to be a Software Engineer</p>
+        </div>
+      </section>
       <div class="main-centerer">
         <div class="wrapper">
-          <section class="hero-image" id="hero">
-            <div class="hero-text">
-              <h1>I am Daniel</h1>
-              <p>And I'm going to be a Software Engineer</p>
-            </div>
-          </section>
-
           <section id="about">
             <h2 class="h2">About Me</h2>
             <h3>Profile</h3>
@@ -64,40 +62,57 @@
 
           <section id="projects">
             <h2>My Projects</h2>
+            <div class="project-wrapper">
+              <div class="project">
+                <h6>November 2022</h6>
+                <h3>Project 1</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  luctus porttitor nunc sed venenatis. Suspendisse potenti. Duis
+                  vulputate magna at ex mollis ullamcorper. Suspendisse eleifend
+                  nulla et nisi varius auctor. Morbi sit amet magna nec lectus
+                  semper sollicitudin. Maecenas vel risus ullamcorper felis
+                  tempus varius facilisis et elit.
+                </p>
+              </div>
 
-            <div class="project">
-              <h6>November 2022</h6>
-              <h3>Project 1</h3>
-              <p>Description of the project.</p>
-            </div>
+              <div class="project">
+                <h6>Date</h6>
+                <h3>Project 1</h3>
+                <p>Description of the project.</p>
+              </div>
 
-            <div class="project">
-              <h6>Date</h6>
-              <h3>Project 1</h3>
-              <p>Description of the project.</p>
-            </div>
-
-            <div class="project">
-              <h6>Date</h6>
-              <h3>Project 1</h3>
-              <p>Description of the project.</p>
+              <div class="project">
+                <h6>Date</h6>
+                <h3>Project 1</h3>
+                <p>Description of the project.</p>
+              </div>
             </div>
           </section>
 
           <section id="blog">
             <h2>My Blog</h2>
-            <article class="blog-post">
-              <h6>Date</h6>
-              <h3>Blog Post Title</h3>
-              <p>Summary of the blog post.</p>
-              <a href="#">Read more</a>
-            </article>
-            <article class="blog-post">
-              <h6>Date</h6>
-              <h3>Blog Post Title</h3>
-              <p>Summary of the blog post.</p>
-              <a href="#">Read more</a>
-            </article>
+            <div class="blog-wrapper">
+              <article class="blog-post">
+                <h6>Date</h6>
+                <h3>Blog Post Title</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  luctus porttitor nunc sed venenatis. Suspendisse potenti. Duis
+                  vulputate magna at ex mollis ullamcorper. Suspendisse eleifend
+                  nulla et nisi varius auctor. Morbi sit amet magna nec lectus
+                  semper sollicitudin. Maecenas vel risus ullamcorper felis
+                  tempus varius facilisis et elit.
+                </p>
+                <a href="#">Read more</a>
+              </article>
+              <article class="blog-post">
+                <h6>Date</h6>
+                <h3>Blog Post Title</h3>
+                <p>Summary of the blog post.</p>
+                <a href="#">Read more</a>
+              </article>
+            </div>
           </section>
 
           <section id="contact">
@@ -133,7 +148,7 @@
       </div>
     </main>
 
-    <footer>
+    <footer style="margin: 8px">
       <p>&copy; 2025 Insert text here.</p>
     </footer>
   </body>
