@@ -11,9 +11,15 @@
 }
 
 h2 {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
     font-size:xx-large;
 }
+  
+
 h3{
+    font-family: "Federo", sans-serif;
+    font-weight: 400;
     font-size: x-large;
 }
 
@@ -183,4 +189,8 @@ footer{
 .skills-list li div{
     display: flex;
     justify-content: space-between;
+}
+
+p{
+    font-family: "Noto Sans", sans-serif;
 }
