@@ -1,29 +1,29 @@
-.form{
+.contact-form{
     display: flex;
     flex-direction: column;
     gap: 2vh;
     align-items: center;
 }
 
-.form__group{
+.contact-form__group{
     display: flex;
     gap: 3vh;
     flex-wrap: wrap;
 }
 
-.form__input{
+.contact-form__input{
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
 
-.form__input--big{
+.contact-form__input--big{
     min-width: 75%;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
 
-.form__button{
+.contact-form__button{
     background-color: #007BFF;
     color: white;
     border: none;

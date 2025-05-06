@@ -1,10 +1,10 @@
-.projects{
+.project{
     display: flex;
     flex-direction: column;
     gap: 2vh;
 }
 
-.project{
+.project__element{
     display: flex;
     flex-direction: column;
     padding: 2vh;

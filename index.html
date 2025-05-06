@@ -9,7 +9,7 @@
     />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="blocks/about.css" />
-    <link rel="stylesheet" href="blocks/projects.css" />
+    <link rel="stylesheet" href="blocks/project.css" />
     <link rel="stylesheet" href="blocks/blog.css" />
     <link rel="stylesheet" href="blocks/contact-form.css" />
     <link rel="stylesheet" href="blocks/header.css" />
@@ -102,8 +102,8 @@
 
         <section id="projects">
           <h2 class="main__title">My Projects</h2>
-          <div class="projects">
-            <div class="project">
+          <div class="project">
+            <div class="project__element">
               <h6 class="project__date">November 2023</h6>
               <h3 class="project__title">Matrices calculator</h3>
               <p class="project__desc">
@@ -116,7 +116,7 @@
               </p>
             </div>
 
-            <div class="project">
+            <div class="project__element">
               <h6 class="project__date">June 2024</h6>
               <h3 class="project__title">Basic game projects</h3>
               <p class="project__desc">
@@ -127,7 +127,7 @@
               </p>
             </div>
 
-            <div class="project">
+            <div class="project__element">
               <h6 class="project__date">November 2024</h6>
               <h3 class="project__title">Teaching application</h3>
               <p class="project__desc">
@@ -149,10 +149,10 @@
         <section id="blog">
           <h2 class="main__title">My Blog</h2>
           <div class="blog">
-            <article class="post">
-              <h6 class="post__date">April 27, 2025</h6>
-              <h3 class="post__title">A new era</h3>
-              <p class="post__desc">
+            <article class="blog__post">
+              <h6 class="blog__date">April 27, 2025</h6>
+              <h3 class="blog__title">A new era</h3>
+              <p class="blog__desc">
                 With this page, I'm finally starting to worry more about my own
                 future, I must keep working hard on getting a clean image and
                 presentation of myself once I finish the University, will I be
@@ -160,10 +160,10 @@
                 family?
               </p>
             </article>
-            <article class="post">
-              <h6 class="post__date">Date</h6>
-              <h3 class="post__title">Blog Post Title</h3>
-              <p class="post__desc">Summary of the blog post.</p>
+            <article class="blog__post">
+              <h6 class="blog__date">Date</h6>
+              <h3 class="blog__title">Blog Post Title</h3>
+              <p class="blog__desc">Summary of the blog post.</p>
               <!-- <a class="post__link" href="#">Read more</a> -->
             </article>
           </div>
@@ -171,25 +171,25 @@
 
         <section id="contact">
           <h2 class="main__title">Contact Me</h2>
-          <form action="#" method="post" class="form">
-            <div class="form__group">
+          <form action="#" method="post" class="contact-form">
+            <div class="contact-form__group">
               <div>
-                <label class="form__label" for="name">Name:</label>
-                <input class="form__input" type="text" id="name" name="name" required />
+                <label class="contact-form__label" for="name">Name:</label>
+                <input class="contact-form__input" type="text" id="name" name="name" required />
               </div>
               <div>
-                <label class="form__label" for="email">Email:</label>
-                <input class="form__input" type="email" id="email" name="email" required />
+                <label class="contact-form__label" for="email">Email:</label>
+                <input class="contact-form__input" type="email" id="email" name="email" required />
               </div>
               <div>
-                <label class="form__label" for="phone">Phone:</label>
-                <input class="form__input" type="tel" id="phone" name="phone" required />
+                <label class="contact-form__label" for="phone">Phone:</label>
+                <input class="contact-form__input" type="tel" id="phone" name="phone" required />
               </div>
             </div>
-            <label class="form__label" for="message">Message:</label>
-            <textarea class="form__input--big" id="message" name="message" rows="4" required></textarea>
+            <label class="contact-form__label" for="message">Message:</label>
+            <textarea class="contact-form__input--big" id="message" name="message" rows="4" required></textarea>
 
-            <button class="form__button" type="submit">Send</button>
+            <button class="contact-form__button" type="submit">Send</button>
           </form>
         </section>
       </div>
