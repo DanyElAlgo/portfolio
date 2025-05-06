@@ -10,6 +10,12 @@
     flex-wrap: wrap;
 }
 
+.header__logo{
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-size:xx-large;
+}
+
 .header__navbar{
     display: flex;
     gap: 2vw;
