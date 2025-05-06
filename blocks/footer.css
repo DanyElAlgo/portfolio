@@ -1,0 +1,20 @@
+.footer{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left:4vw;
+    margin-right:4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #6c757d;
+}
+
+.footer__copy {
+    font-family: "Noto Sans", sans-serif;
+}
+
+.footer__links{
+    display: flex;
+    gap: 2vw;
+    font-size: larger;
+}

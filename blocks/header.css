@@ -1,0 +1,18 @@
+.header {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left:4vw;
+    margin-right:4vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header__navbar{
+    display: flex;
+    gap: 2vw;
+    flex-wrap: wrap;
+    font-size:larger;
+}

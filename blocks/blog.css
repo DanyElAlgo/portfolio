@@ -1,0 +1,29 @@
+.blog{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.post__date{
+    margin-top:0.5rem;
+    margin-bottom:1rem;
+    font-size:medium;
+    font-weight: 700;
+    color: #6c757d;
+}
+
+.post__title{
+    margin-top:0;
+}
+
+.post__desc{
+    font-family: "Noto Sans", sans-serif;
+}
