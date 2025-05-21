@@ -1,8 +1,10 @@
 import { observerMixin } from "./mixin.js";
 
 export class BlogItem {
-  constructor(text) {
-    this.text = text;
+  constructor(date, title, desc) {
+    this.title = title;
+    this.date = date;
+    this.desc = desc;
   }
 }
 
@@ -28,18 +30,18 @@ export class BlogList {
     return this.instance;
   }
 
-  add(todoItem) {
+  add(item) {
     const array = Array.from(this.#data);
-    const todoExists = array.filter((t) => t.text == todoItem.text).length > 1;
-    if (!todoExists) {
-      this.#data.add(todoItem);
+    const exists = array.filter((t) => t.title == item.title).length > 1;
+    if (!exists) {
+      this.#data.add(item);
       this.notify();
     }
   }
-  remove(todoItem) {
+  remove(item) {
     let message = "Not found";
     this.#data.forEach((e)=>{
-        if(e.text == todoItem.text){
+        if(e.title == item.title){
             this.#data.delete(e);
             message = "Deleted";
             this.notify();
@@ -48,9 +50,9 @@ export class BlogList {
     })
     console.log(message);
   }
-  find(text) {
+  find(title) {
     const array = Array.from(this.#data);
-    return array.find((t)=> t.text == text);
+    return array.find((t)=> t.text == title);
   }
 }
 

@@ -3,6 +3,20 @@ import { BlogItem, BlogList } from "./services/blog__post.js";
 
 globalThis.DOM = {};
 
+function createInitialPosts() {
+  const blogList = BlogList.getInstance();
+  blogList.add(
+    new BlogItem(
+      "April 27, 2025",
+      "A new era",
+      "With this page, I'm finally starting to worry more about my own future, I must keep working hard on getting a clean image and presentation of myself once I finish the University, will I be able to accomplish my dream of going back to Spain and help my family?"
+    )
+  );
+  blogList.add(
+    new BlogItem("2023-10-02", "Blog Post 2", "Description of blog post 2")
+  );
+}
+
 function renderList() {
   const blogList = BlogList.getInstance();
   DOM.blogList.innerHTML = "";
@@ -20,15 +34,26 @@ function renderList() {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  DOM.addBtn = document.getElementById("blog__save");
+  DOM.blogList = document.querySelector(".blog");
 
-  DOM.todoList.addEventListener("click", (event) => {
+  createInitialPosts();
+
+  DOM.blogList.addEventListener("click", (event) => {
     if (event.target.classList.contains("blog__save")) {
-      const item = new TodoItem(event.target.parentElement.innerText.split("\n")[0].trim());
-      const cmd = new Command(Commands.DELETE, item);
-      CommandExecutor.execute(cmd);
+      // Toggle the active class
+      event.target.classList.toggle("blog__save--active");
+
+      event.target.textContent = event.target.classList.contains(
+        "blog__save--active"
+      )
+        ? "Saved"
+        : "Save";
     }
   });
 
+  renderList();
+
   BlogList.getInstance().addObserver(renderList);
 });
+
+//TODO: Añadir routers, abstracción y design patterns. También los elementos dinámicos y el guardado like

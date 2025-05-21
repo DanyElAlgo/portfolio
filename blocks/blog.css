@@ -27,3 +27,23 @@
 .blog__desc{
     font-family: "Noto Sans", sans-serif;
 }
+
+.blog__save{
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: min-content;
+}
+
+.blog__save--active{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: min-content;
+}

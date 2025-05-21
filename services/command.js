@@ -19,19 +19,20 @@ export const CommandExecutor = {
     execute(command){
         const todoList = BlogList.getInstance();
         switch(command.name){
-            case Commands.ADD:
-                const todoInput = globalThis.DOM.todoInput;
-                const todoText = todoInput.value.trim();
-                const todoExist = todoList.find(todoText);
-                if(todoExist == undefined && todoText != ""){
-                    todoList.add(new TodoItem(todoText));
-                    todoInput.value = "";
-                }
-                break;
-            case Commands.DELETE:
-                todoList.remove(command.args);
-                break;
+            // case Commands.ADD:
+            //     const todoInput = globalThis.DOM.todoInput;
+            //     const todoText = todoInput.value.trim();
+            //     const todoExist = todoList.find(todoText);
+            //     if(todoExist == undefined && todoText != ""){
+            //         todoList.add(new TodoItem(todoText));
+            //         todoInput.value = "";
+            //     }
+            //     break;
+            // case Commands.DELETE:
+            //     todoList.remove(command.args);
+            //     break;
             case Commands.SAVE:
+                
         }
     }
 }
