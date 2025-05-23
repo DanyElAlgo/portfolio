@@ -55,5 +55,3 @@ window.addEventListener("DOMContentLoaded", () => {
 
   BlogList.getInstance().addObserver(renderList);
 });
-
-//TODO: Añadir routers, abstracción y design patterns. También los elementos dinámicos y el guardado like
