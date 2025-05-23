@@ -52,7 +52,7 @@ export class BlogList {
   }
   find(title) {
     const array = Array.from(this.#data);
-    return array.find((t)=> t.text == title);
+    return array.find((t)=> t.title == title);
   }
 }
 

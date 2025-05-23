@@ -22,162 +22,65 @@
     <header class="header">
       <h1 class="header__logo">My Portfolio</h1>
       <nav class="header__navbar">
-        <a href="#about">About</a>
+        <a href="#home">Home</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#blog">Blog</a>
       </nav>
     </header>
-    <main class="main">
-      <section class="hero" id="hero">
-        <div class="hero__content">
-          <h1>I am Daniel Roland</h1>
-          <p>Future Software Engineer and video game enthusiast.</p>
-        </div>
-      </section>
+    <div class="main">
+      <main class="main__container">
+        <!-- Dynamic content -->
+      </main>
       <div class="main__wrapper">
-        <section id="about">
-          <h2 class="main__title">About Me</h2>
-          <div class="about">
-            <h3 class="about__title--upper">Profile</h3>
-            <p class="about__desc">
-              I have always been interested in knowing how video games work, the
-              logic behind the art of programming, and knowing why many programs
-              lack the optimization of others. Always willing to learn something
-              new, from success and failure, to become a great QA developer.
-            </p>
-            <h3 class="about__title">Skills</h3>
-            <ul class="about__skills">
-              <li class="about__skill">
-                <span>HTML</span>
-                <progress value="35" max="100"></progress>
-              </li>
-
-              <li class="about__skill">
-                <span>CSS</span>
-                <progress value="35" max="100"></progress>
-              </li>
-
-              <li class="about__skill">
-                <span>JavaScript</span>
-                <progress value="30" max="100"></progress>
-              </li>
-
-              <li class="about__skill">
-                <span>Python</span>
-                <progress value="50" max="100"></progress>
-              </li>
-
-              <li class="about__skill">
-                <span>React</span>
-                <progress value="50" max="100"></progress>
-              </li>
-
-              <li class="about__skill">
-                <span>C++</span>
-                <progress value="60" max="100"></progress>
-              </li>
-
-              <li class="about__skill">
-                <span>C#</span>
-                <progress value="65" max="100"></progress>
-              </li>
-            </ul>
-            <h3 class="about__title">Education</h3>
-            <ul class="about__education">
-              <li>High School Diploma</li>
-            </ul>
-            <h3 class="about__title">Languages</h3>
-            <ul class="about__languages">
-              <li>Spanish</li>
-              <li>English</li>
-            </ul>
-            <h3 class="about__title">Interests and hobbies</h3>
-            <ul class="about__hobbies">
-              <li>Videogame research</li>
-              <li>Reading</li>
-              <li>Basic Excel tables</li>
-              <li>Listening to soft music</li>
-            </ul>
-          </div>
-        </section>
-
-        <section id="projects">
-          <h2 class="main__title">My Projects</h2>
-          <div class="project">
-            <div class="project__element" onClick="">
-              <h6 class="project__date">November 2023</h6>
-              <h3 class="project__title">Matrices calculator</h3>
-              <p class="project__desc">
-                After I learnt about arrays, vectors and the math behind them, I
-                was tasked to develop a complex project as another final
-                project, so I teamed with some other classmates and made a
-                little calculator that could receive two NxN matrices and make
-                addition or multiplication. It also included an option to make a
-                transposed 3x3 matrix of the given matrix.
-              </p>
-            </div>
-
-            <div class="project__element">
-              <h6 class="project__date">June 2024</h6>
-              <h3 class="project__title">Basic game projects</h3>
-              <p class="project__desc">
-                In my learning process at the University, I've been tasked to
-                develop some simple and very known games as final projects in
-                order to show my knowledge, and so I did: Minesweeper and
-                Tic-tac-toe.
-              </p>
-            </div>
-
-            <div class="project__element">
-              <h6 class="project__date">November 2024</h6>
-              <h3 class="project__title">Teaching application</h3>
-              <p class="project__desc">
-                Time passes at the University, and the tasks get more complex,
-                this time I was asked to make an app that demonstrates a proper
-                management of the Analysis and Design stages of the Software's
-                lifespan, so I built an app where an administrator receives
-                teaching applications and promotes them to a test stage (to
-                verify the quality of the applicant) or just reject them, with
-                enough application promotions, the applicant would be fully
-                hired. On the other side, the applicants could choose which job
-                they want to apply to, and after submitting an application, they
-                could see the progress of it.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section id="blog">
-          <h2 class="main__title">My Blog</h2>
-          <div class="blog">
-          </div>
-        </section>
-
         <section id="contact">
           <h2 class="main__title">Contact Me</h2>
           <form action="#" method="post" class="contact-form">
             <div class="contact-form__group">
               <div>
                 <label class="contact-form__label" for="name">Name:</label>
-                <input class="contact-form__input" type="text" id="name" name="name" required />
+                <input
+                  class="contact-form__input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                />
               </div>
               <div>
                 <label class="contact-form__label" for="email">Email:</label>
-                <input class="contact-form__input" type="email" id="email" name="email" required />
+                <input
+                  class="contact-form__input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                />
               </div>
               <div>
                 <label class="contact-form__label" for="phone">Phone:</label>
-                <input class="contact-form__input" type="tel" id="phone" name="phone" required />
+                <input
+                  class="contact-form__input"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                />
               </div>
             </div>
             <label class="contact-form__label" for="message">Message:</label>
-            <textarea class="contact-form__input--big" id="message" name="message" rows="4" required></textarea>
+            <textarea
+              class="contact-form__input--big"
+              id="message"
+              name="message"
+              rows="4"
+              required
+            ></textarea>
 
             <button class="contact-form__button" type="submit">Send</button>
           </form>
         </section>
       </div>
-    </main>
+    </div>
 
     <footer class="footer">
       <p class="footer__copy">&copy; 2025</p>
