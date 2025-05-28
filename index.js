@@ -10,7 +10,7 @@ function createInitialPosts() {
         new BlogItem(
             "April 27, 2025",
             "A new era",
-            "With this page, I'm finally starting to worry more about my own future..."
+            "Hey, my post got deleted >:c"
         )
     );
     blogList.add(

@@ -38,7 +38,7 @@
     width: min-content;
 }
 
-.blog__save--active{
+.blog__save--saved{
     background-color: #28a745;
     color: white;
     border: none;

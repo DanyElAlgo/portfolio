@@ -1,4 +1,5 @@
 import { BlogItem, BlogList } from "../services/blog__post.js";
+
 export function renderBlog() {
     const content = `
     <div class="main__wrapper">
@@ -10,7 +11,6 @@ export function renderBlog() {
         </div>
     `;
     
-    // Inicializar después de renderizar
     setTimeout(() => {
         initializeBlog();
     }, 0);
@@ -33,13 +33,18 @@ function renderBlogPosts() {
     DOM.blogList.innerHTML = "";
     
     for (const post of blogList.items) {
+        const savedState = localStorage.getItem(`post_${post.id}`);
+        const isSaved = savedState === "1";
+        
         const item = document.createElement("article");
         item.classList.add("blog__post");
         item.innerHTML = `
             <h6 class="blog__date">${post.date}</h6>
             <h3 class="blog__title">${post.title}</h3>
             <p class="blog__desc">${post.desc}</p>
-            <button class="blog__save">Save</button>
+            <button class="blog__save ${isSaved ? 'blog__save--saved' : ''}" data-post-id="${post.id}">
+                ${isSaved ? 'Saved' : 'Save'}
+            </button>
         `;
         DOM.blogList.appendChild(item);
     }
@@ -48,10 +53,20 @@ function renderBlogPosts() {
 function attachBlogListeners() {
     DOM.blogList.addEventListener("click", (event) => {
         if (event.target.classList.contains("blog__save")) {
-            event.target.classList.toggle("blog__save--active");
-            event.target.textContent = event.target.classList.contains("blog__save--active")
-                ? "Saved"
-                : "Save";
+            const button = event.target;
+            const postId = button.dataset.postId;
+            const isSaved = button.classList.contains("blog__save--saved");
+            
+            if (isSaved) {
+                localStorage.removeItem(`post_${postId}`);
+                button.classList.remove("blog__save--saved");
+                button.textContent = "Save";
+            } else {
+                localStorage.setItem(`post_${postId}`, "1");
+                button.classList.add("blog__save--saved");
+                button.textContent = "Saved";
+            }
         }
     });
 }
+
