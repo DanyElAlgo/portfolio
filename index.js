@@ -8,13 +8,14 @@ function createInitialPosts() {
     const blogList = BlogList.getInstance();
     blogList.add(
         new BlogItem(
+            1,
             "April 27, 2025",
             "A new era",
             "Hey, my post got deleted >:c"
         )
     );
     blogList.add(
-        new BlogItem("2023-10-02", "Blog Post 2", "Description of blog post 2")
+        new BlogItem(2, "2023-10-02", "Blog Post 2", "Description of blog post 2")
     );
 }
 

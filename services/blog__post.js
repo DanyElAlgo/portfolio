@@ -1,7 +1,8 @@
 import { observerMixin } from "./mixin.js";
 
 export class BlogItem {
-  constructor(date, title, desc) {
+  constructor(id, date, title, desc) {
+    this.id = id;
     this.title = title;
     this.date = date;
     this.desc = desc;
