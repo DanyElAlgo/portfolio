@@ -26,6 +26,6 @@ const routes = {
 };
 
 window.addEventListener('DOMContentLoaded', () => {
-    createInitialPosts();
+    // createInitialPosts();
     new Router(routes);
 });
