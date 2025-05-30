@@ -32,9 +32,19 @@ const routes = {
 window.addEventListener('DOMContentLoaded', () => {
     // createInitialPosts();
     new Router(routes);
+    searchBar();
 });
 
 window.addEventListener('onChange', () => {
     const command = new Command("search");
 });
 
+window.addEventListener('keydown', (event) => {
+    if(event == "Ctrl"+"K"){
+        return new Command("bar")
+    }
+    event.preventDefault();
+    if(event == "Ctrl"+"F"){
+        return new Command("fav"/*, post.id */)
+    }
+});
