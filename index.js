@@ -34,4 +34,6 @@ window.addEventListener('keydown', (event) => {
     if(event == "Ctrl"+"F"){
         return new Command("fav"/*, post.id */)
     }
+
+    // TODO: Investigar cómo usar el keydown event
 });
