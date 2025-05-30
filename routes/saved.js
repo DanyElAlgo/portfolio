@@ -23,20 +23,15 @@ function attachBlogListeners() {
     if (event.target.classList.contains("blog__save")) {
       const button = event.target;
       const postId = button.dataset.postId;
-      const postDesc = event.srcElement.previousElementSibling.innerText;
-      const isSaved = button.classList.contains("blog__save--saved");
+      const postDesc = event.srcElement.previousElementSibling.parentElement;
 
-      if (isSaved) {
         localStorage.removeItem(`post_${postId}`);
         button.classList.remove("blog__save--saved");
+        postDesc.remove();
         button.textContent = "Save";
-      } else {
-        localStorage.setItem(`post_${postId}`, `${postDesc}`);
-        button.classList.add("blog__save--saved");
-        button.textContent = "Saved";
-      }
+
     }
-    // Reload page?
+    // Now it reloads repeated data, noooooooo
   });
 }
 

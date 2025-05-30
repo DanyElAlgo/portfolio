@@ -18,11 +18,11 @@ export class SavedList {
 
   static instance = null;
   static {
-    this.instance = new BlogList();
+    this.instance = new SavedList();
   }
 
   constructor() {
-    if (BlogList.instance) {
+    if (SavedList.instance) {
       console.log("NO MULTIPLE INSTANCES >:(");
     }
   }
@@ -57,4 +57,4 @@ export class SavedList {
   }
 }
 
-Object.assign(BlogList.prototype, observerMixin);
+Object.assign(SavedList.prototype, observerMixin);
