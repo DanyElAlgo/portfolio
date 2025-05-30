@@ -15,7 +15,8 @@ export const Commands = {
     DELETE: "delete",
     SAVE: "save",
     SEARCH: "search",
-    FAV: "toggle-fav"
+    FAV: "toggle-fav",
+    BAR: "bar",
 }
 
 export const CommandExecutor = {
@@ -43,9 +44,14 @@ export const CommandExecutor = {
                 }
                 break;
             case Commands.FAV:
-                
+                /*
+                El intercambio entre elementos favoritos lo realizo desde las mismas páginas,
+                pero si se separan un poco las funciones necesarias, entonces quizás haya una
+                manera de traer la funcionalidad hasta aquí
+                */
+               break;
+            case BAR:
+                // focus(searchInput)???????????????????????????????????
         }
     }
 }
-
-// Hora de devolverle la utilidad a esto

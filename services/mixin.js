@@ -7,7 +7,6 @@ export const observerMixin = {
     this.observers.delete(obs);
   },
   notify() {
-    // Separar por funcionalidad
     this.observers.forEach((obs) => obs());
   },
 };

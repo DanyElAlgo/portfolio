@@ -4,6 +4,8 @@ import { renderHome } from './routes/home.js';
 import { renderProjects } from './routes/projects.js';
 import { renderBlog } from './routes/blog.js';
 import { renderSaved } from "./routes/saved.js";
+import { Command, CommandExecutor } from "./services/command.js";
+import searchBar from "./blocks/search-bar.js";
 
 function createInitialPosts() {
     const blogList = BlogList.getInstance();
@@ -31,3 +33,8 @@ window.addEventListener('DOMContentLoaded', () => {
     // createInitialPosts();
     new Router(routes);
 });
+
+window.addEventListener('onChange', () => {
+    const command = new Command("search");
+});
+
