@@ -7,20 +7,7 @@ import { renderSaved } from "./routes/saved.js";
 import { Command, CommandExecutor } from "./services/command.js";
 import searchBar from "./blocks/search-bar.js";
 
-function createInitialPosts() {
-    const blogList = BlogList.getInstance();
-    blogList.add(
-        new BlogItem(
-            1,
-            "April 27, 2025",
-            "A new era",
-            "Hey, my post got deleted >:c"
-        )
-    );
-    blogList.add(
-        new BlogItem(2, "2023-10-02", "Blog Post 2", "Description of blog post 2")
-    );
-}
+
 
 const routes = {
     home: renderHome,
@@ -40,10 +27,11 @@ window.addEventListener('onChange', () => {
 });
 
 window.addEventListener('keydown', (event) => {
+    event.preventDefault();
     if(event == "Ctrl"+"K"){
+        console.log("what")
         return new Command("bar")
     }
-    event.preventDefault();
     if(event == "Ctrl"+"F"){
         return new Command("fav"/*, post.id */)
     }

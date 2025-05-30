@@ -106,6 +106,7 @@ function loadMorePosts() {
         const isSaved = savedState != null;
         
         const item = document.createElement("article");
+        item.id = post.id;
         item.classList.add("blog__post");
         item.innerHTML = `
             <h6 class="blog__date">${post.date}</h6>

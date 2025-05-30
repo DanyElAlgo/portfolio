@@ -39,8 +39,8 @@ export const CommandExecutor = {
                 const searchInput = globalThis.DOM.searchInput.value.trim();
                 const itemExists = savedList.find(searchInput);
                 if(itemExists){
-                    focus()
-                    // CÓMO SE IMPLEMENTA ESTE DE AQUÍ?!
+                    item = document.getElementById(command.args);
+                    item.focus();
                 }
                 break;
             case Commands.FAV:
@@ -51,9 +51,8 @@ export const CommandExecutor = {
                 */
                break;
             case BAR:
-                // focus(searchInput)???????????????????????????????????
-                focus(globalThis.DOM.searchInput);
-                // prevent(default);
+                bar = document.getElementById("search-bar");
+                bar.focus();
         }
     }
 }
