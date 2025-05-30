@@ -3,6 +3,7 @@ import { Router } from './services/router.js';
 import { renderHome } from './routes/home.js';
 import { renderProjects } from './routes/projects.js';
 import { renderBlog } from './routes/blog.js';
+import { renderSaved } from "./routes/saved.js";
 
 function createInitialPosts() {
     const blogList = BlogList.getInstance();
@@ -22,7 +23,8 @@ function createInitialPosts() {
 const routes = {
     home: renderHome,
     projects: renderProjects,
-    blog: renderBlog
+    blog: renderBlog,
+    saved: renderSaved,
 };
 
 window.addEventListener('DOMContentLoaded', () => {
