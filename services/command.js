@@ -1,4 +1,5 @@
 import { BlogItem, BlogList } from "./blog__post.js";
+import { SavedList } from "./safe.js";
 
 export class Command{
     name;
@@ -13,11 +14,13 @@ export const Commands = {
     ADD: "add", 
     DELETE: "delete",
     SAVE: "save",
+    SEARCH: "search",
+    FAV: "toggle-fav"
 }
 
 export const CommandExecutor = {
     execute(command){
-        const todoList = BlogList.getInstance();
+        const savedList = SavedList.getInstance();
         switch(command.name){
             // case Commands.ADD:
             //     const todoInput = globalThis.DOM.todoInput;
@@ -31,10 +34,18 @@ export const CommandExecutor = {
             // case Commands.DELETE:
             //     todoList.remove(command.args);
             //     break;
-            case Commands.SAVE:
+            case Commands.SEARCH:
+                const searchInput = globalThis.DOM.searchInput.value.trim();
+                const itemExists = savedList.find(searchInput);
+                if(itemExists){
+                    focus()
+                    // CÓMO SE IMPLEMENTA ESTE DE AQUÍ?!
+                }
+                break;
+            case Commands.FAV:
                 
         }
     }
 }
 
-// Bro, debo devolverle la utilidad a esto :sob:
+// Hora de devolverle la utilidad a esto

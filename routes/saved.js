@@ -34,9 +34,9 @@ function attachBlogListeners() {
         localStorage.setItem(`post_${postId}`, `${postDesc}`);
         button.classList.add("blog__save--saved");
         button.textContent = "Saved";
-        console.log(postDesc);
       }
     }
+    // Reload page?
   });
 }
 
