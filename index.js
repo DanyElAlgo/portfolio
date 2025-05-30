@@ -17,7 +17,6 @@ const routes = {
 };
 
 window.addEventListener('DOMContentLoaded', () => {
-    // createInitialPosts();
     new Router(routes);
     searchBar();
 });

@@ -36,6 +36,9 @@ function renderInitialPosts() {
                 ${isSaved ? 'Saved' : 'Save'}
             </button>
         `;
+
+        // Mi botón no está usando Shadow DOM, o sí? D:
+
         DOM.blogList.appendChild(item);
     }
 }

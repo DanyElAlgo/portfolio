@@ -15,6 +15,7 @@ export default SearchBar;
 
 function render() {
   globalThis.DOM = globalThis.DOM;
+  console.log(document.getElementById("search-bar"));
   DOM.searchBar = document.getElementById("search-bar");
   DOM.searchBar.innerHTML = "";
 

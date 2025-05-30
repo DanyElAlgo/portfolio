@@ -40,7 +40,6 @@ function initializeBlog() {
   DOM.blogList = document.querySelector(".blog");
 
   if (DOM.blogList) {
-    // renderInitialPosts(); // Legacy posts
     attachBlogListeners();
     setup();
   }
