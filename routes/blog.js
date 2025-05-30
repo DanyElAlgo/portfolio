@@ -5,6 +5,7 @@ export function renderBlog() {
     <div class="main__wrapper">
         <section id="blog">
             <h2 class="main__title">My Blog</h2>
+            <p>Customize your own posts descriptions and save them with the button below.</p>
             <div class="blog">
             </div>
         </section>
