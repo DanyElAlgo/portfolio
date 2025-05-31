@@ -18,14 +18,17 @@ export const Commands = {
 
 export const CommandExecutor = {
     execute(command){
-        const savedList = SavedList.getInstance();
+        const savedList = BlogList.getInstance();
         switch(command.name){
             case Commands.SEARCH:
-                const searchInput = globalThis.DOM.searchInput.value.trim();
-                const itemExists = savedList.find(searchInput);
-                if(itemExists){
-                    item = document.getElementById(command.args);
+                const searchInput = command.args;
+                const item = document.getElementById(savedList.find(searchInput).id);
+                if(item){
+                    item.scrollIntoView({ behavior: 'smooth' });
                     item.focus();
+                }
+                else{
+                    console.log("Not found");
                 }
                 break;
             case Commands.FAV:
@@ -35,8 +38,8 @@ export const CommandExecutor = {
                 manera de traer la funcionalidad hasta aquí
                 */
                break;
-            case BAR:
-                bar = document.getElementById("search-bar");
+            case Commands.BAR:
+                let bar = document.getElementById("search-input");
                 bar.focus();
         }
     }

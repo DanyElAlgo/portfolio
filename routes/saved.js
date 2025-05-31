@@ -81,6 +81,7 @@ function loadMorePosts() {
     const isSaved = savedState != null;
     if (isSaved) {
       const item = document.createElement("article");
+      item.id = post.id;
       item.classList.add("blog__post");
       item.innerHTML = `
             <h6 class="blog__date">${post.date}</h6>
@@ -97,7 +98,7 @@ function loadMorePosts() {
       DOM.blogList.insertBefore(item, DOM.blogList.lastElementChild);
 
       let observer = new MutationObserver((mutationRecords) => {
-        console.log(mutationRecords);
+        // console.log(mutationRecords);
       });
 
       observer.observe(item.querySelector(".blog__desc"), {

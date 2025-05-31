@@ -123,7 +123,7 @@ function loadMorePosts() {
         DOM.blogList.insertBefore(item, DOM.blogList.lastElementChild);
 
         let observer = new MutationObserver(mutationRecords => {
-            console.log(mutationRecords);
+            // console.log(mutationRecords);
         });
 
         observer.observe(item.querySelector('.blog__desc'), {
