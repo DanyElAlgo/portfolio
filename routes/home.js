@@ -12,7 +12,7 @@ export function renderHome() {
           <div class="about">
             <h3 class="about__title--upper">Profile</h3>
             <p class="about__desc">
-              I have always been interested in knowing how video games work, the
+              I've always been interested in knowing how video games work, the
               logic behind the art of programming, and knowing why many programs
               lack the optimization of others. Always willing to learn something
               new, from success and failure, to become a great QA developer.
